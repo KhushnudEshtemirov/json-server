@@ -14,10 +14,11 @@
   "headers": [
     {
       "source": "/(.*)",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*"
-      }
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
+    },
+    {
+      "source": "/personal-financial-management.vercel.app/(.*)",
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
   ]
 }
