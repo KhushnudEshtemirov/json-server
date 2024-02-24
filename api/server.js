@@ -7,8 +7,6 @@ server.use(middlewares);
 server.use(
   jsonServer.rewriter({
     "/api/*": "/$1",
-    "/expenses/:resource/:id/show": "/:resource/:id",
-    "/income/:resource/:id/show": "/:resource/:id",
   })
 );
 server.use(router);
